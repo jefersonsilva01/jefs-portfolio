@@ -18,6 +18,24 @@ const Hero = () => {
 
         </div>
       </nav>
+
+      <main>
+        <div id="title">
+          <h1>JEF'S</h1>
+          <div>
+            <img src="./assets/Lightning icon-dark.svg" alt="Lightning" />
+          </div>
+        </div>
+
+        <h2>FULL STACK DEVELOPMENT</h2>
+
+        <p>Creating solutions goes beyond code—it's about transforming ideas into functional and engaging experiences. In this portfolio, you will find projects that reflect my passion for development and innovation. Explore and discover what we can build together!</p>
+
+        <span>SCROLL DOWN</span>
+
+        <img src="./assets/Scroll icon light.svg" alt="scroll icon" />
+
+      </main>
     </Header>
   );
 };
