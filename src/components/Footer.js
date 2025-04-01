@@ -21,8 +21,13 @@ const Footer = () => {
 
         <div id="social">
           <div>
-            <img src="./assets/Linkedin icon-light.png" alt="Linkedin icon" />
-            <img src="./assets/Github icon.png" alt="Github icon" />
+            <a href="https://www.linkedin.com/in/jefersonsilva01/">
+              <img src="./assets/Linkedin icon-light.png" alt="Linkedin icon" />
+            </a>
+
+            <a href="https://github.com/jefersonsilva01">
+              <img src="./assets/Github icon.png" alt="Github icon" />
+            </a>
           </div>
 
           <div id="BTN-Top">

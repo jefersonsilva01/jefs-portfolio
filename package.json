@@ -10,8 +10,10 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^3.0.1",
-    "web-vitals": "^2.1.4",
-    "styled-components": "^6.1.12"
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.12",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

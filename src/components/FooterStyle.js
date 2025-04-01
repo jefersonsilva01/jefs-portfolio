@@ -46,7 +46,7 @@ const FooterSection = styled.footer`
       width: 200px;
       justify-content: space-between;
 
-      & > div > img {
+      & > div > a > img {
         margin: 0 8px;
         height: 44px;
         width: 44px;

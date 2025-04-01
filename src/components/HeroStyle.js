@@ -9,7 +9,7 @@ const Header = styled.header`
     max-width: 1440px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     margin: 0 auto;
     padding: 8px 32px;
 
@@ -42,7 +42,6 @@ const Header = styled.header`
           fill: var(--WT-Main);
         }
       }
-
     }
 
     @media(max-width: 800px) {
