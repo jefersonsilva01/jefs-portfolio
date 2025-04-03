@@ -21,11 +21,11 @@ const Footer = () => {
 
         <div id="social">
           <div>
-            <a href="https://www.linkedin.com/in/jefersonsilva01/">
+            <a target="_blank" href="https://www.linkedin.com/in/jefersonsilva01/" rel="noopener noreferrer">
               <img src="./assets/Linkedin icon-light.png" alt="Linkedin icon" />
             </a>
 
-            <a href="https://github.com/jefersonsilva01">
+            <a target="_blank" href="https://github.com/jefersonsilva01" rel="noopener noreferrer">
               <img src="./assets/Github icon.png" alt="Github icon" />
             </a>
           </div>

@@ -121,6 +121,7 @@ const Header = styled.header`
     }
 
     & > img {
+      animation: blink 3.5s infinite;
       display: block;
       margin: 0 auto;
     }

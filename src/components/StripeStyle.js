@@ -13,19 +13,23 @@ const StripeContainer = styled.div`
       display: none !important;
     }
 
-    & > .slick-list > .slick-track {
-      width: 100%;
+    & > .slick-list {
+      ${'' /* height: fit-content !important; */}
     
-      & >.slick-slide {
-        width: fit-content !important;
+      & > .slick-track {
+        ${'' /* width: fit-content !important; */}
+        ${'' /* height: fit-content !important; */}
 
-        & > div {
-          width: fit-content;
-          margin: 0 8px;
+        & > .slick-slide {
+          width: fit-content !important;
+
+          & > div {
+            ${'' /* width: fit-content !important; */}
+            margin: 0 8px;
+          }
         }
       }
     }
-    
   }
 
   & .text {
