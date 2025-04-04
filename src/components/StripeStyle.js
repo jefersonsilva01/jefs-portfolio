@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StripeContainer = styled.div`
-  background-color: var(--BK-2);
+  background-color: ${props => props.color === "true" ? "var(--BK-2)" : "var(--WT-2)"};
   width: 100%;
   padding: 16px 0; 
 
@@ -33,7 +33,7 @@ const StripeContainer = styled.div`
   }
 
   & .text {
-    color: var(--WT-Main);
+    color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
     font-family: var(--Hind);
     font-weight: 600;
     display: inline !important;

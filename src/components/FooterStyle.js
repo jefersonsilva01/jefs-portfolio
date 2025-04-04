@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const FooterSection = styled.footer`
-  background-color: var(--BK-2);
+  background-color: ${props => props.color === "true" ? "var(--BK-2)" : "var(--WT-2)"};
   width: 100%;
   height: 100%;
   padding: 0 108px 32px;
 
   & > h1 {
-    color: var(--WT-Main);
-    font-size: 92px;
+    color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
+    font-size: ${props => props.lang === "true" ? "92px" : "4.5em"};
     text-align: center;
     max-width: 1440px;
     margin: 0 auto;
@@ -31,7 +31,7 @@ const FooterSection = styled.footer`
     
       & > li {
         & > strong, a {
-          color: var(--WT-Main);
+          color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
           text-decoration: none;
         }
 
@@ -53,7 +53,7 @@ const FooterSection = styled.footer`
       }
 
       & #BTN-Top {
-        border: solid 2px var(--WT-Main);
+        border: solid 2px ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
         background-color: transparent;
         border-radius: 8px;
         height: 44px;
@@ -67,16 +67,16 @@ const FooterSection = styled.footer`
           height: 28px;
 
           & > path {
-            fill: var(--WT-Main);
+            fill: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
           }
         }
 
         &:hover {
-          border: solid 2px var(--BK-3);
-          background-color: var(--WT-Main);
+          border: solid 2px ${props => props.color === "true" ? "var(--BK-3)" : "var(--WT-2)"};
+          background-color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
 
           & > svg > path {
-            fill: var(--BK-3);
+            fill: ${props => props.color === "true" ? "var(--BK-3)" : "var(--WT-2)"};
           }
         }
       }

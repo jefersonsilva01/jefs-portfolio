@@ -3,7 +3,7 @@ import { StripeContainer } from './StripeStyle';
 
 import Slider from 'react-slick';
 
-const Stripe = () => {
+const Stripe = props => {
   const settings = {
     infinite: true,  // Habilita o loop
     autoplay: true,
@@ -38,13 +38,13 @@ const Stripe = () => {
   };
 
   return (
-    <StripeContainer>
+    <StripeContainer color={`${props.theme}`}>
       <Slider {...settings}>
         <p className="text">FRONT END</p>
         <p className="text">&#10042;</p>
         <p className="text">BACK END</p>
         <p className="text">&#10042;</p>
-        <p className="text">FULL STACK</p>
+        <p className="text">FULLSTACK</p>
         <p className="text">&#10042;</p>
         <p className="text">UX/UI DESIGN</p>
         <p className="text">&#10042;</p>
@@ -52,7 +52,7 @@ const Stripe = () => {
         <p className="text">&#10042;</p>
         <p className="text">BACK END</p>
         <p className="text">&#10042;</p>
-        <p className="text">FULL STACK</p>
+        <p className="text">FULLSTACK</p>
         <p className="text">&#10042;</p>
         <p className="text">UX/UI DESIGN</p>
         <p className="text">&#10042;</p>
@@ -60,7 +60,7 @@ const Stripe = () => {
         <p className="text">&#10042;</p>
         <p className="text">BACK END</p>
         <p className="text">&#10042;</p>
-        <p className="text">FULL STACK</p>
+        <p className="text">FULLSTACK</p>
         <p className="text">&#10042;</p>
         <p className="text">UX/UI DESIGN</p>
         <p className="text">&#10042;</p>

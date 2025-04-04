@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const WorksContainer = styled.div`
-  background-color: var(--BK-Main);
+  background-color: ${props => props.color === "true" ? "var(--BK-Main)" : "var(--WT-Main)"};
   width: 100%;
   height: 100%;
 
@@ -12,7 +12,7 @@ const WorksContainer = styled.div`
 
     & .text {
       padding-top: 64px;
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-family: var(--Hind);
       font-weight: 600;
       font-size: 1.1em;
@@ -57,11 +57,11 @@ const WorksContainer = styled.div`
     
     & .bullet {
       list-style: none;
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-family: var(--Hind);
       font-weight: 600;
       font-size: 14px;
-      background-color: var(--BK-3);
+      background-color: ${props => props.color === "true" ? "var(--BK-3)" : "var(--WT-2)"};
       opacity: 0.5;
       display: inline;
       margin: 8px;
@@ -70,7 +70,7 @@ const WorksContainer = styled.div`
     }
 
     & h1 {
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-size: 4em;
       padding: 68px 0 64px;
       display: inline;
@@ -82,7 +82,7 @@ const WorksContainer = styled.div`
     }
 
     & .body-text {
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-size: 1.2em;
       max-width: 585px;
       padding: 16px 0;
@@ -102,15 +102,15 @@ const WorksContainer = styled.div`
 
       & a:nth-child(2){
         text-decoration: none;
-        color: var(--BK-Main);
-        background-color: var(--WT-2);
+        color: ${props => props.color === "true" ? "var(--BK-Main)" : "var(--WT-Main)"};
+        background-color: ${props => props.color === "true" ? "var(--WT-2)" : "var(--BK-2)"};
         border-radius: 8px;
         padding: 4px 16px;
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          color: var(--WT-Main);
-          background-color: var(--BK-3);
+          color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
+          background-color: ${props => props.color === "true" ? "var(--BK-3)" : "var(--WT-2)"};
         }
       }
     }

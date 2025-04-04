@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Header = styled.header`
-  background-color: var(--BK-Main);
+  background-color: ${props => props.color === "true" ? "var(--BK-Main)" : "var(--WT-Main)"};
   height: 100vh;
   overflow: hidden;
 
@@ -25,7 +25,7 @@ const Header = styled.header`
       
       & > div {
         cursor: pointer;
-        background-color: var(--BK-2);
+        background-color: ${props => props.color === "true" ? "var(--BK-2)" : "var(--WT-2)"};
         width: 36px;
         height: 36px;
         display: flex;
@@ -35,11 +35,12 @@ const Header = styled.header`
         transition: all 0.3s ease-in-out;
 
         &:hover {
-          background-color: var(--BK-3);
+          background-color: ${props => props.color === "true" ? "var(--BK-3)" : "var(--WT-Main)"};
         }
       
         & > svg > path {
           fill: var(--WT-Main);
+          fill: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
         }
       }
     }
@@ -65,7 +66,7 @@ const Header = styled.header`
       align-items: baseline;
 
       & > h1 {
-        color: var(--WT-Main);
+        color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
         font-size: 236px;
         line-height: 1;
       }
@@ -74,7 +75,7 @@ const Header = styled.header`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--WT-Main);
+        background-color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
         width: 44px;
         height: 44px;
         border-radius: 50%;
@@ -82,16 +83,16 @@ const Header = styled.header`
     }
 
     & > h2 {
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-2)"};
       font-size: 44px;
       line-height: 1;
-      border-bottom: solid 8px var(--WT-Main);
+      border-bottom: solid 8px ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       display: inline-block;
     }
 
     & > p {
       margin-top: 48px;
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-size: 90%;
       font-weight: 400;
       max-width: 560px;
@@ -114,7 +115,7 @@ const Header = styled.header`
     & > span {
       display: block;
       margin: 178px 0 16px;
-      color: var(--WT-Main);
+      color: ${props => props.color === "true" ? "var(--WT-Main)" : "var(--BK-Main)"};
       font-weight: 600;
       animation: blink 3.5s infinite;
       text-align: center;
