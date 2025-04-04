@@ -16,7 +16,7 @@
 
 Este projeto é um portfólio digital desenvolvido com React e styled-components, projetado para apresentar minhas habilidades, experiências e projetos de forma interativa e moderna.
 
-Você pode ver a demonstração do jogo clicando [aqui](https://jefersonsilva01.github.io/Valorant-The-Card-Game/).
+Você pode ver a demonstração do jogo clicando [aqui](https://jefs-portfolio.vercel.app/).
 
 ## Layout
 

@@ -18,7 +18,7 @@ You can also read a version of this readme in portuguese [here](https://github.c
 
 This project is a digital portfolio developed with React and styled-components, designed to present my skills, experiences and projects in an interactive and modern way.
 
-You can see the game demo by clicking [here](https://jefersonsilva01.github.io/Valorant-The-Card-Game/).
+You can see the game demo by clicking [here](https://jefs-portfolio.vercel.app/).
 
 ## Layout
 
