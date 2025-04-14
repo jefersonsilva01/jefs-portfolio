@@ -6,7 +6,7 @@ const WorksContainer = styled.div`
   height: 100%;
 
   & > #works-content {
-    ${'' /* max-width: 1440px; */}
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 32px;
 
