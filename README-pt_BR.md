@@ -30,7 +30,7 @@ As seguintes tecnologias foram utilizadas neste projeto:
 
 ## Rodando o projeto
 
-Clone ou baixe este repositório e abra o arquivo index.html com seu navegador preferido.
+Clone ou baixe este repositório.
 
 ```bash
 git clone https://github.com/<user>/jefs-portfolio

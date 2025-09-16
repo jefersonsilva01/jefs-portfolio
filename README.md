@@ -32,7 +32,7 @@ The following technologies were used for this project:
 
 ## Running the project
 
-Clone or download this repository and open the index.html file with your preferred browser.
+Clone or download this repository.
 
 ```bash
 git clone https://github.com/<user>/jefs-portfolio
